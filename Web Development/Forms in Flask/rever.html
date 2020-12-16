@@ -1,0 +1,19 @@
+<!-- <p>
+{% if name %}
+  The name you entered is {{name}}.
+
+{% else %}
+  Please enter a name in the form below:
+{% endif %}
+</p> -->
+
+<form method="POST">
+    {{ form.hidden_tag() }}
+    {{ form.name.label }} 
+    {{ form.name}}
+    <br>
+    <br>
+    {{ form.submit() }}
+</form>
+
+<p>Reverse of {{name}} = {{reversedstring}}</p>

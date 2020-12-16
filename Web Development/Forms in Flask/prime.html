@@ -1,0 +1,19 @@
+<!-- <p>
+{% if n %}
+  The number you entered is {{n}}.
+
+{% else %}
+  Please enter a number in the form below:
+{% endif %}
+</p> -->
+
+<form method="POST">
+    {{ form.hidden_tag() }}
+    {{ form.n.label }} 
+    {{ form.n}}
+<br>
+<br>
+{{ form.prime() }}<br>
+<p>{{n}} is {{prime}}</p> 
+
+</form>
